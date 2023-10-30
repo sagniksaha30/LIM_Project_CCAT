@@ -2,6 +2,13 @@
 
 lim is a python application designed to analytically compute various statistics of line intensity maps using a wide variety of models.  It also contains functions to generate simulated intensity maps from peak-patch simulations provided by George Stein.  This code is a work in progress, so it may change significantly and there may be undetected bugs.
 
+#Note
+This code was updated by Sagnik Saha so that it can be used
+to make predictions for CCAT. The code required a major modification, particularly in the line_obs.py file, in order to account for the units in which the instrument specifications are
+provided. The reference paper is :
+
+arXiv:2208.10634 [astro-ph.IM]
+
 ### Prerequisites
 
 lim requires several packages which should be familiar to astronomers working with python, including numpy, scipy, and astropy.  It also makes substantial use of Francisco Villaescusa-Navarro's [pylians](https://github.com/franciscovillaescusa/Pylians) package, which can be download from github and installed along with its dependencies with the commands
@@ -15,7 +22,7 @@ Astropy units are used throughout this code to avoid unit conversion errors. To 
 
 Using the simulation functionality requires peak-patch catalogs.  One example catalog is included here, more can be obtained from George Stein (github.com/georgestein)
 
-Finally, lim uses the python camb wrapper to compute all needed cosmological quantities. 
+Finally, lim uses the python camb wrapper to compute all needed cosmological quantities.
 
 ### Quickstart
 
@@ -54,7 +61,7 @@ There is also a reset() method which will reset all input parameters back to the
 
 ### Examples
 
-An ipython notebook fully commented is provided as an example. Following this notebook (LIM_PkFisher.ipynb) will get you familiar with the code (especially with the computation of the power spectrum multipoles and the corresponding covariance), and will allow you to reproduce the results appearing on the papers: arXiv:1907.10065 and arXiv:1907.10067. These papers (and the example), focus on the use of the multipoles of the LIM power spectrum to extract robust and optimal cosmological information, marginalizing over astrophysical uncertainties. 
+An ipython notebook fully commented is provided as an example. Following this notebook (LIM_PkFisher.ipynb) will get you familiar with the code (especially with the computation of the power spectrum multipoles and the corresponding covariance), and will allow you to reproduce the results appearing on the papers: arXiv:1907.10065 and arXiv:1907.10067. These papers (and the example), focus on the use of the multipoles of the LIM power spectrum to extract robust and optimal cosmological information, marginalizing over astrophysical uncertainties.
 
 ### Modules
 
