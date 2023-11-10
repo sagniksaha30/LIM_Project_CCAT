@@ -2,7 +2,7 @@
 
 lim is a python application designed to analytically compute various statistics of line intensity maps using a wide variety of models.  It also contains functions to generate simulated intensity maps from peak-patch simulations provided by George Stein.  This code is a work in progress, so it may change significantly and there may be undetected bugs.
 
-#Note
+### Note:
 This code was updated by Sagnik Saha so that it can be used
 to make predictions for CCAT. The code required a major modification, particularly in the line_obs.py file, in order to account for the units in which the instrument specifications are
 provided. The reference paper is :
