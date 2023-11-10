@@ -2,13 +2,15 @@
 
 lim is a python application designed to analytically compute various statistics of line intensity maps using a wide variety of models.  It also contains functions to generate simulated intensity maps from peak-patch simulations provided by George Stein.  This code is a work in progress, so it may change significantly and there may be undetected bugs.
 
-### Note:
+### Note 1:
 This code was updated by Sagnik Saha so that it can be used
 to make predictions for CCAT. The code required a major modification, particularly in the line_obs.py file, in order to account for the units in which the instrument specifications are
 provided. The reference paper is :
 
 arXiv:2208.10634 [astro-ph.IM]
 
+### Note 2:
+There are 2 .ipynb files. Run the "....datafilecreation" version only if you want to create separate data files for standalone plots. Otherwise, just run the other .ipynb file.
 ### Prerequisites
 
 lim requires several packages which should be familiar to astronomers working with python, including numpy, scipy, and astropy.  It also makes substantial use of Francisco Villaescusa-Navarro's [pylians](https://github.com/franciscovillaescusa/Pylians) package, which can be download from github and installed along with its dependencies with the commands
