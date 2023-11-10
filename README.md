@@ -105,8 +105,3 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 * Code based on matlab routines originally developed with Ely Kovetz
 * LimLam simulation code adapted from limlam_mocker code written by George Stein and Dongwoo Chung
-
-
-
-# LIM_Project_CCAT
-# LIM_Project_CCAT
